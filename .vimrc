@@ -66,6 +66,13 @@ if WINDOWS()
     endif
 
 else
+    " in mac-terminal
+    " silent exec 'language en_US'
+
+    " in linux-terminal
+    " silent exec 'language en_US.utf8' 
+    silent exec 'language zh_TW.utf8' 
+
     " set default encoding to utf-8
     set encoding=utf-8
     set termencoding=utf-8
@@ -113,7 +120,7 @@ syntax on " required
 " Default colorscheme setup
 "/////////////////////////////////////////////////////////////////////////////
 
-if has('gui_running')
+if has("gui_running")
     set background=dark
 else " if we are in terminal mode
     set background=dark
