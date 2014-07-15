@@ -65,6 +65,13 @@ if WINDOWS()
     endif
 
 else
+    " in mac-terminal
+    " silent exec 'language en_US'
+
+    " in linux-terminal
+    " silent exec 'language en_US.utf8' 
+    silent exec 'language zh_TW.utf8' 
+
     " set default encoding to utf-8
     set encoding=utf-8
     set termencoding=utf-8
@@ -99,9 +106,9 @@ syntax on " required
 " Default colorscheme setup
 "/////////////////////////////////////////////////////////////////////////////
 
-if has('gui_running')
+if has("gui_running")
     set background=dark
-else
+else " if we are in terminal mode
     set background=dark
     set t_Co=256 " make sure our terminal use 256 color
     let g:solarized_termcolors = 256
@@ -266,8 +273,10 @@ set	cinoptions=>s,e0,n0,f0,{0,}0,^0,:0,=s,l0,b0,g0,hs,ps,ts,is,+s,c3,C0,0,(0,us,
 " set cinkeys=0{,0},0),:,!^F,o,O,e
 
 " official diff settings
-set diffexpr=g:MyDiff()
-function! g:MyDiff()
+"set diffexpr=g:my_diff()
+set diffexpr=My_diff()
+"function! g:my_diff()
+function! My_diff()
     let opt = '-a --binary -w '
     if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
     if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
