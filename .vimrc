@@ -59,10 +59,11 @@ elseif OSX()
 
 else
     " in mac-terminal
-    silent exec 'language en_US'
+    " silent exec 'language en_US'
 
     " in linux-terminal
     " silent exec 'language en_US.utf8' 
+    silent exec 'language zh_TW.utf8' 
 
     " set default encoding to utf-8
     set encoding=utf-8
@@ -97,7 +98,17 @@ endif
 
 filetype plugin indent on " required
 syntax on " required
-silent exec "colorscheme solarized"
+
+" silent exec "colorscheme solarized"
+" color scheme define
+if has("gui_running")
+    " silent exec "colorscheme ex"
+    silent exec "colorscheme ex_lightgray"
+else " if we are in terminal mode
+    " NOTE: you cannot use if has('mac') to detect platform in terminal mode.
+    silent exec "colorscheme default"
+    " silent exec "colorscheme darkblue"
+endif
 
 "/////////////////////////////////////////////////////////////////////////////
 " General
@@ -251,8 +262,10 @@ set	cinoptions=>s,e0,n0,f0,{0,}0,^0,:0,=s,l0,b0,g0,hs,ps,ts,is,+s,c3,C0,0,(0,us,
 " set cinkeys=0{,0},0),:,!^F,o,O,e
 
 " official diff settings
-set diffexpr=g:my_diff()
-function! g:my_diff()
+"set diffexpr=g:my_diff()
+set diffexpr=My_diff()
+"function! g:my_diff()
+function! My_diff()
     let opt = '-a --binary -w '
     if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
     if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
