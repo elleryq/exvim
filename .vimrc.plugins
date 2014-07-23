@@ -281,4 +281,19 @@ let g:vim_markdown_initial_foldlevel=9999
 
 "}}}
 
+" vim-gitgutter
+" https://github.com/airblade/vim-gitgutter
+Plugin 'airblade/vim-gitgutter'
+nnoremap <unique> <leader>gt :GitGutterToggle<CR>
+nnoremap <unique> <leader>gl :GitGutterLineHighlightsToggle<CR>
+nmap <silent> ]h :<C-U>execute v:count1 . "GitGutterNextHunk"<CR>
+nmap <silent> [h :<C-U>execute v:count1 . "GitGutterPrevHunk"<CR>
+
+" vim-autopep8
+" You need to install autopep8/pep8 first.
+" pip install --user autopep8 pep8
+Plugin 'tell-k/vim-autopep8'
+autocmd FileType python map <buffer> <F7> :call Autopep8()<CR>
+let g:autopep8_disable_show_diff=1
+
 " vim:ts=4:sw=4:sts=4 et fdm=marker:
