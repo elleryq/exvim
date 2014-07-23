@@ -1,2 +1,7 @@
 " This file will be loaded at the end of .vimrc.
 " This file is designed to add your own vim scripts or override the exVim's .vimrc settings.
+
+if !WINDOWS()
+    silent exec 'language zh_TW.utf8' 
+endif
+ 
