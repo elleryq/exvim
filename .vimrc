@@ -99,7 +99,7 @@ syntax on " required
 " Default colorscheme setup
 "/////////////////////////////////////////////////////////////////////////////
 
-if has("gui_running")
+if has('gui_running')
     set background=dark
 else " if we are in terminal mode
     set background=dark
