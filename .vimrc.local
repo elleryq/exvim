@@ -5,3 +5,12 @@ if !WINDOWS()
     silent exec 'language zh_TW.utf8' 
 endif
  
+" color scheme define
+if has("gui_running")
+    " silent exec "colorscheme ex"
+    silent exec "colorscheme ex_lightgray"
+else " if we are in terminal mode
+    " NOTE: you cannot use if has('mac') to detect platform in terminal mode.
+    silent exec "colorscheme default"
+    " silent exec "colorscheme darkblue"
+endif
