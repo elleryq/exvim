@@ -1,9 +1,9 @@
 #!/bin/bash
 
-cp ./dist/ctags_lang ~/.ctags
-cp .vimrc ~/.vimrc
-cp .vimrc.plugins ~/.vimrc.plugins
-cp .vimrc.local ~/.vimrc.local
-cp .vimrc.plugins.local ~/.vimrc.plugins.local
+ln -s ./dist/ctags_lang ~/.ctags
+ln -s .vimrc ~/.vimrc
+ln -s .vimrc.plugins ~/.vimrc.plugins
+ln -s .vimrc.local ~/.vimrc.local
+ln -s .vimrc.plugins.local ~/.vimrc.plugins.local
 rm -rf ~/.vim
-cp -r vimfiles ~/.vim
+ln -s vimfiles ~/.vim
