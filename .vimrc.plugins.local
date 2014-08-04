@@ -20,3 +20,5 @@ Plugin 'tell-k/vim-autopep8'
 autocmd FileType python map <buffer> <F7> :call Autopep8()<CR>
 let g:autopep8_disable_show_diff=1
 
+" grep.Vim
+Plugin 'grep.vim'
