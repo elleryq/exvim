@@ -29,3 +29,6 @@ else " if we are in terminal mode
     " silent exec "colorscheme darkblue"
 endif
 
+" Customize
+set fileencodings=ucs-bom,big5,utf-8,latin1
+
