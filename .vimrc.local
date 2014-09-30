@@ -17,3 +17,4 @@ endif
 
 " Customize
 set fileencodings=ucs-bom,big5,utf-8,latin1
+" set fileencodings=ucs-bom,utf-8,utf-16le,big5,cp950,cp1252
