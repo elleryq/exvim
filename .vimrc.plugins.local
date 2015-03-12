@@ -23,3 +23,5 @@ let g:autopep8_disable_show_diff=1
 " grep.Vim
 Plugin 'grep.vim'
 
+" EnhancedDiff, Need 7.4!!
+"Plugin 'chrisbra/vim-diff-enhanced'
