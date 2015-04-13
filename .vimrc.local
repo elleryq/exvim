@@ -29,3 +29,5 @@ else " if we are in terminal mode
     " silent exec "colorscheme darkblue"
 endif
 
+" For mutt
+au BufRead /tmp/mutt-* set tw=72
