@@ -25,3 +25,7 @@ Plugin 'grep.vim'
 
 " EnhancedDiff, Need 7.4!!
 "Plugin 'chrisbra/vim-diff-enhanced'
+
+" materialtheme
+" https://github.com/Wutzara/vim-materialtheme
+Plugin 'Wutzara/vim-materialtheme'

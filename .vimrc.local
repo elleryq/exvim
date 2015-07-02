@@ -10,16 +10,6 @@ else
     silent exec 'language zh_TW.utf8' 
 endif
  
-" color scheme define
-if has("gui_running")
-    " silent exec "colorscheme ex"
-    silent exec "colorscheme ex_lightgray"
-else
-    " NOTE: you cannot use if has('mac') to detect platform in terminal mode.
-    silent exec "colorscheme default"
-    " silent exec "colorscheme darkblue"
-endif
-
 " Customize
 set fileencodings=ucs-bom,utf-8,big5,latin1
 " set fileencodings=ucs-bom,utf-8,utf-16le,big5,cp950,cp1252
@@ -33,8 +23,9 @@ if has("gui_running")
     silent exec "colorscheme ex_lightgray"
 else " if we are in terminal mode
     " NOTE: you cannot use if has('mac') to detect platform in terminal mode.
-    silent exec "colorscheme default"
     " silent exec "colorscheme darkblue"
+    " silent exec "colorscheme default"
+    silent exec "colorscheme materialtheme"
 endif
 
 " For mutt
