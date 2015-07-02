@@ -53,8 +53,7 @@ if WINDOWS()
     if has('multi_byte')
         " Windows cmd.exe still uses cp850. If Windows ever moved to
         " Powershell as the primary terminal, this would be utf-8
-        " set termencoding=cp850
-        set termencoding=cp950
+        set termencoding=cp850
         " Let Vim use utf-8 internally, because many scripts require this
         set encoding=utf-8
         setglobal fileencoding=utf-8
@@ -62,7 +61,7 @@ if WINDOWS()
         " fallback into cp1252 instead of eg. iso-8859-15.
         " Newer Windows files might contain utf-8 or utf-16 LE so we might
         " want to try them first.
-        set fileencodings=ucs-bom,utf-8,utf-16le,cp1252,iso-8859-15,latin1
+        set fileencodings=ucs-bom,utf-8,utf-16le,cp1252,iso-8859-15
     endif
 
 else
@@ -113,7 +112,7 @@ syntax on " required
 " Default colorscheme setup
 "/////////////////////////////////////////////////////////////////////////////
 
-if has("gui_running")
+if has('gui_running')
     set background=dark
 else " if we are in terminal mode
     set background=dark

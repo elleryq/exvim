@@ -1,7 +1,12 @@
 " This file will be loaded at the end of .vimrc.
 " This file is designed to add your own vim scripts or override the exVim's .vimrc settings.
 
-if !WINDOWS()
+if WINDOWS()
+    if has('multi_byte')
+        set termencoding=cp950
+        set fileencodings=ucs-bom,utf-8,utf-16le,cp1252,iso-8859-15,latin1
+    endif
+else
     silent exec 'language zh_TW.utf8' 
 endif
  
@@ -9,7 +14,7 @@ endif
 if has("gui_running")
     " silent exec "colorscheme ex"
     silent exec "colorscheme ex_lightgray"
-else " if we are in terminal mode
+else
     " NOTE: you cannot use if has('mac') to detect platform in terminal mode.
     silent exec "colorscheme default"
     " silent exec "colorscheme darkblue"
