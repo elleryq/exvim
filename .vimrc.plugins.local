@@ -29,3 +29,6 @@ Plugin 'grep.vim'
 " materialtheme
 " https://github.com/Wutzara/vim-materialtheme
 Plugin 'Wutzara/vim-materialtheme'
+
+" vim-go
+Plugin 'fatih/vim-go'
