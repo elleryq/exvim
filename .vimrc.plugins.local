@@ -30,5 +30,8 @@ Plugin 'grep.vim'
 " https://github.com/Wutzara/vim-materialtheme
 Plugin 'Wutzara/vim-materialtheme'
 
+" vim-hybrid-material
+Plugin 'kristijanhusak/vim-hybrid-material'
+
 " vim-go
 Plugin 'fatih/vim-go'

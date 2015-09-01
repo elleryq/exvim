@@ -25,7 +25,11 @@ else " if we are in terminal mode
     " NOTE: you cannot use if has('mac') to detect platform in terminal mode.
     " silent exec "colorscheme darkblue"
     " silent exec "colorscheme default"
-    silent exec "colorscheme materialtheme"
+
+    " silent exec "colorscheme materialtheme"
+
+    " https://github.com/kristijanhusak/vim-hybrid-material
+    silent exec "colorscheme hybrid_material"
 endif
 
 " For mutt
