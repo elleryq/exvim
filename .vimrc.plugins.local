@@ -35,3 +35,8 @@ Plugin 'kristijanhusak/vim-hybrid-material'
 
 " vim-go
 Plugin 'fatih/vim-go'
+
+" vim-phpqa
+" need to install phpcs and phpmd
+Plugin 'joonty/vim-phpqa'
+let g:phpqa_open_loc=0
