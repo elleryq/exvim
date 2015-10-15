@@ -14,6 +14,9 @@ endif
 set fileencodings=ucs-bom,utf-8,big5,latin1
 " set fileencodings=ucs-bom,utf-8,utf-16le,big5,cp950,cp1252
 
+set cindent shiftwidth=4 " set cindent on to autoinent when editing c/c++ file, with 4 shift width
+set tabstop=4 " set tabstop to 4 characters
+
 "map <C-n> :NERDTreeToggle<CR>
 nnoremap <F3> :NERDTreeToggle<CR>
 
