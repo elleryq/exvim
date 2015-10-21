@@ -7,9 +7,9 @@ if WINDOWS()
         set fileencodings=ucs-bom,utf-8,utf-16le,cp1252,iso-8859-15,latin1
     endif
 else
-    silent exec 'language zh_TW.utf8' 
+    silent exec 'language zh_TW.utf8'
 endif
- 
+
 " Customize
 set fileencodings=ucs-bom,utf-8,big5,latin1
 " set fileencodings=ucs-bom,utf-8,utf-16le,big5,cp950,cp1252
@@ -37,3 +37,7 @@ endif
 
 " For mutt
 au BufRead /tmp/mutt-* set tw=72
+
+" Remove unwanted spaces
+" From http://vim.wikia.com/wiki/Remove_unwanted_spaces
+nnoremap <silent> <leader>ts :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
