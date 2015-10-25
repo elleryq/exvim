@@ -41,3 +41,13 @@ au BufRead /tmp/mutt-* set tw=72
 " Remove unwanted spaces
 " From http://vim.wikia.com/wiki/Remove_unwanted_spaces
 nnoremap <silent> <leader>ts :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
+" PHP auto indent
+if !exists("g:phpcbf_command")
+    let g:phpcbf_command = "phpcbf"
+endif
+function! RunPHPCBF()
+    silent !clear
+    execute "!" . g:phpcbf_command . " " . bufname("%")
+endfunction
+autocmd FileType php map <buffer> <F7> :call RunPHPCBF()<CR>
