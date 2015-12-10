@@ -40,3 +40,7 @@ Plugin 'fatih/vim-go'
 " need to install phpcs and phpmd
 Plugin 'joonty/vim-phpqa'
 let g:phpqa_open_loc=0
+
+" vim-jedi
+" https://github.com/davidhalter/jedi-vim
+Plugin 'davidhalter/jedi-vim'
