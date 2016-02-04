@@ -121,6 +121,7 @@ else " if we are in terminal mode
 endif
 colorscheme solarized
 " colorscheme exlightgray
+" colorscheme gruvbox
 
 "/////////////////////////////////////////////////////////////////////////////
 " General
