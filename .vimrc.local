@@ -7,7 +7,7 @@ if WINDOWS()
         set fileencodings=ucs-bom,utf-8,utf-16le,cp1252,iso-8859-15,latin1
     endif
 else
-    silent exec 'language zh_TW.utf8'
+    silent! exec 'language zh_TW.utf8'
 endif
 
 " Customize
@@ -23,7 +23,7 @@ nnoremap <F3> :NERDTreeToggle<CR>
 " color scheme define
 if has("gui_running")
     " silent exec "colorscheme ex"
-    silent exec "colorscheme ex_lightgray"
+    silent! exec "colorscheme ex_lightgray"
 else " if we are in terminal mode
     " NOTE: you cannot use if has('mac') to detect platform in terminal mode.
     " silent exec "colorscheme darkblue"
