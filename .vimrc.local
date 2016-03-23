@@ -32,7 +32,7 @@ else " if we are in terminal mode
     " silent exec "colorscheme materialtheme"
 
     " https://github.com/kristijanhusak/vim-hybrid-material
-    silent exec "colorscheme hybrid_material"
+    silent! exec "colorscheme hybrid_material"
 endif
 
 " For mutt
