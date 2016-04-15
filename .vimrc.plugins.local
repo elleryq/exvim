@@ -44,3 +44,6 @@ let g:phpqa_open_loc=0
 " vim-jedi
 " https://github.com/davidhalter/jedi-vim
 Plugin 'davidhalter/jedi-vim'
+
+" vim-kite
+" set rtp+=~/.vim/bundle/vim-kite/
