@@ -47,3 +47,6 @@ Plugin 'davidhalter/jedi-vim'
 
 " vim-kite
 " set rtp+=~/.vim/bundle/vim-kite/
+
+" vim-terraform
+Plugin 'hashivim/vim-terraform'

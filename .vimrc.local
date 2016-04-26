@@ -30,9 +30,13 @@ else " if we are in terminal mode
     " silent exec "colorscheme default"
 
     " silent exec "colorscheme materialtheme"
+    " silent exec "colorscheme materialtheme"
 
     " https://github.com/kristijanhusak/vim-hybrid-material
-    silent! exec "colorscheme hybrid_material"
+    " silent! exec "colorscheme hybrid_material"
+    silent! exec "colorscheme hybrid"
+    " let g:hybrid_custom_term_colors=1
+    " let g:hybrid_reduced_contrast=1
 endif
 
 " For mutt
