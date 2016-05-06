@@ -50,3 +50,7 @@ Plugin 'davidhalter/jedi-vim'
 
 " vim-terraform
 Plugin 'hashivim/vim-terraform'
+
+" zeavim
+Plugin 'KabbAmine/zeavim.vim'
+
