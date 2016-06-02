@@ -24,6 +24,20 @@ nnoremap <F3> :NERDTreeToggle<CR>
 if has("gui_running")
     " silent exec "colorscheme ex"
     silent! exec "colorscheme ex_lightgray"
+    augroup ex_gui_font
+        " check and determine the gui font after GUIEnter.
+        " NOTE: getfontname function only works after GUIEnter.
+        au!
+        au GUIEnter * call s:set_my_gui_font()
+    augroup END
+    " set guifont
+    function! s:set_my_gui_font()
+        if has('gui_gtk2')
+            if getfontname( 'Inconsolata' ) != ''
+                set guifont=Inconsolata\ 12
+            endif
+        endif
+    endfunction
 else " if we are in terminal mode
     " NOTE: you cannot use if has('mac') to detect platform in terminal mode.
     " silent exec "colorscheme darkblue"
