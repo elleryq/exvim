@@ -54,3 +54,5 @@ Plugin 'hashivim/vim-terraform'
 " zeavim
 Plugin 'KabbAmine/zeavim.vim'
 
+" ag.vim
+Plugin 'rking/ag.vim'
