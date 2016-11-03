@@ -447,7 +447,7 @@ let c_no_bracket_error = 1
 " web {{{
 
 Plugin 'ntpeters/vim-better-whitespace'
-nnoremap <unique> <leader>w :StripWhitespace<CR>
+nnoremap <unique> <leader>ws :StripWhitespace<CR>
 
 " ex-typescript
 " ---------------------------------------------------
