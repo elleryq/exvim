@@ -100,3 +100,9 @@ The repository contains:
 
 - [Chinese] QQ群: 319248144
 - [English] Comming Soon...
+
+## Vim 8
+```
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt-get update
+```
