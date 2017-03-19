@@ -54,8 +54,11 @@ Plugin 'hashivim/vim-terraform'
 " zeavim
 Plugin 'KabbAmine/zeavim.vim'
 
-" ag.vim
-Plugin 'rking/ag.vim'
+" Ack
+Plugin 'mileszs/ack.vim'
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 " ale: Asynchronous Lint Engine
 Plugin 'w0rp/ale'
