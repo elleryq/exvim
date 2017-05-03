@@ -62,3 +62,15 @@ endif
 
 " ale: Asynchronous Lint Engine
 Plugin 'w0rp/ale'
+
+" vim-nerdtree-tabs
+Plugin 'jistr/vim-nerdtree-tabs'
+" let g:nerdtree_tabs_open_on_console_startup=1
+map <leader>n <plug>NERDTreeTabsToggle<CR>
+
+" vim-editorconfig
+" I choose vim-editorconfig, not editorconfig-vim, because
+" vim-editorconfig was written by pure vimscript, I don't
+" need to install any dependencies.
+Plugin 'sgur/vim-editorconfig'
+
