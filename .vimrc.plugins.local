@@ -74,10 +74,6 @@ map <leader>n <plug>NERDTreeTabsToggle<CR>
 " need to install any dependencies.
 Plugin 'sgur/vim-editorconfig'
 
-" snipmate
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-
-" Optional:
+" ultisnips
+Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
