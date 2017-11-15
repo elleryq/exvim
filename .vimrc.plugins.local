@@ -79,4 +79,4 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 " rope
-Plugin 'klen/rope-vim'
+" Plugin 'klen/rope-vim'
