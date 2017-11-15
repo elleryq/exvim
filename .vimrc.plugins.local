@@ -77,3 +77,6 @@ Plugin 'sgur/vim-editorconfig'
 " ultisnips
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+
+" rope
+Plugin 'klen/rope-vim'
