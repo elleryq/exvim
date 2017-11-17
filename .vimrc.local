@@ -84,5 +84,5 @@ endif
 
 let g:ultisnips_python_style="google"
 
-autocmd FileType python nnoremap <leader>= :0,$!yapf<CR>
-autocmd FileType python nnoremap <leader>is :!isort %<CR><CR>
+" autocmd FileType python nnoremap <leader>= :0,$!yapf<CR>
+" autocmd FileType python nnoremap <leader>is :!isort %<CR><CR>
