@@ -57,7 +57,7 @@ Plugin 'KabbAmine/zeavim.vim'
 " Ack
 Plugin 'mileszs/ack.vim'
 if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+  let g:ackprg = 'ag'
 endif
 
 " ale: Asynchronous Lint Engine
@@ -80,3 +80,7 @@ Plugin 'honza/vim-snippets'
 
 " rope
 " Plugin 'klen/rope-vim'
+
+" airline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
