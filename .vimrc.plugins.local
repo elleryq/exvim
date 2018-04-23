@@ -82,5 +82,10 @@ Plugin 'honza/vim-snippets'
 " Plugin 'klen/rope-vim'
 
 " airline
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
+" Lightline
+Plugin 'itchyny/lightline.vim'
+
+" vim-move
+Plugin 'matze/vim-move'
