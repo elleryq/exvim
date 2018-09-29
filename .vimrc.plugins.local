@@ -89,3 +89,7 @@ Plugin 'itchyny/lightline.vim'
 
 " vim-move
 Plugin 'matze/vim-move'
+
+" pandoc
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax' 
