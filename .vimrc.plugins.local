@@ -96,3 +96,13 @@ Plugin 'vim-pandoc/vim-pandoc-syntax'
 
 " Braceless
 Plugin 'tweekmonster/braceless.vim'
+
+" gv - a git commit browser
+" :GV
+" :GV!
+" :GV?
+" press 'q' to exit, 'o'/'O'/<CR> to open commit
+Plugin 'junegunn/gv.vim'
+
+" committia.vim
+Plugin 'rhysd/committia.vim'
