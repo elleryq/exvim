@@ -16,9 +16,9 @@ nmap <silent> [h :<C-U>execute v:count1 . "GitGutterPrevHunk"<CR>
 " vim-autopep8
 " You need to install autopep8/pep8 first.
 " pip install --user autopep8 pep8
-Plugin 'tell-k/vim-autopep8'
-autocmd FileType python map <buffer> <F7> :call Autopep8()<CR>
-let g:autopep8_disable_show_diff=1
+"Plugin 'tell-k/vim-autopep8'
+"autocmd FileType python map <buffer> <F7> :call Autopep8()<CR>
+"let g:autopep8_disable_show_diff=1
 
 " grep.Vim
 Plugin 'grep.vim'
